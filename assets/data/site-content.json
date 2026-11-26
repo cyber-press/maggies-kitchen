@@ -17,30 +17,86 @@
     "secondaryButton": "Order Today"
   },
   "services": [
-    {"title":"Flavorful Highlights","description":"Indulge in iconic dishes such as smoky jollof, perfectly grilled fish, and sweet golden plantain, perfect for communal dining."},
-    {"title":"Catering Services","description":"Celebrate with our generous catering options that suit various occasions, ensuring every meal is a memorable experience."},
-    {"title":"Braiding Expertise","description":"Experience our personalized braiding services, offering protective styles that showcase your individuality and elegance."},
-    {"title":"Inviting Atmosphere","description":"Our lounge welcomes you to relax and connect, making it the perfect backdrop for sharing flavors with friends."}
+    {
+      "title": "Flavorful Highlights",
+      "description": "Indulge in iconic dishes such as smoky jollof, perfectly grilled fish, and sweet golden plantain, perfect for communal dining."
+    },
+    {
+      "title": "Catering Services",
+      "description": "Celebrate with our generous catering options that suit various occasions, ensuring every meal is a memorable experience."
+    },
+    {
+      "title": "Braiding Expertise",
+      "description": "Experience our personalized braiding services, offering protective styles that showcase your individuality and elegance."
+    },
+    {
+      "title": "Inviting Atmosphere",
+      "description": "Our lounge welcomes you to relax and connect, making it the perfect backdrop for sharing flavors with friends."
+    }
   ],
   "testimonials": [
-    {"name":"Jordan Smith","quote":"I was blown away by the flavors and the friendly service! Highly recommend Maggie's Kitchen for any occasion.","rating":5},
-    {"name":"Taylor Johnson","quote":"Maggie's Kitchen never disappoints! The food is always fresh, flavorful, and made with love. A true gem.","rating":5},
-    {"name":"Casey Williams","quote":"Exceptional quality and ambiance! Each visit feels special, and their catering services are top-notch.","rating":5}
+    {
+      "name": "Jordan Smith",
+      "quote": "I was blown away by the flavors and the friendly service! Highly recommend Maggie's Kitchen for any occasion.",
+      "rating": 5
+    },
+    {
+      "name": "Taylor Johnson",
+      "quote": "Maggie's Kitchen never disappoints! The food is always fresh, flavorful, and made with love. A true gem.",
+      "rating": 5
+    },
+    {
+      "name": "Casey Williams",
+      "quote": "Exceptional quality and ambiance! Each visit feels special, and their catering services are top-notch.",
+      "rating": 5
+    }
   ],
   "gallery": [
-    {"src":"assets/images/jollof-rice-catering-tray.jpeg","caption":"Signature Jollof Rice","alt":"Large catering tray of Maggie's Kitchen jollof rice"},
-    {"src":"assets/images/grilled-fish-salad-beans-platter.jpeg","caption":"Grilled Fish Platter","alt":"Grilled fish platter with salad, eggs and beans"},
-    {"src":"assets/images/fried-plantain-close-up.jpeg","caption":"Golden Fried Plantain","alt":"Golden fried plantains prepared by Maggie's Kitchen"},
-    {"src":"assets/images/grilled-fish-fried-plantain-catering-tray.jpeg","caption":"Fish & Plantain Tray","alt":"Catering tray with grilled fish and fried plantains"},
-    {"src":"assets/images/whole-grilled-fish-rice-salad-platter.jpeg","caption":"Celebration Platter","alt":"Whole grilled fish platter with rice, salad and plantains"},
-    {"src":"assets/images/chicken-wings-loaded-fries-tray.jpeg","caption":"Wings & Loaded Fries","alt":"Chicken wings and loaded fries catering tray"},
-    {"src":"assets/images/bottled-homemade-juice.jpeg","caption":"Homemade Refreshments","alt":"Bottles of homemade juice from Maggie's Kitchen"}
+    {
+      "src": "assets/images/jollof-rice-catering-tray.jpeg",
+      "caption": "Signature Jollof Rice",
+      "alt": "Large catering tray of Maggie's Kitchen jollof rice"
+    },
+    {
+      "src": "assets/images/grilled-fish-salad-beans-platter.jpeg",
+      "caption": "Grilled Fish Platter",
+      "alt": "Grilled fish platter with salad, eggs and beans"
+    },
+    {
+      "src": "assets/images/fried-plantain-close-up.jpeg",
+      "caption": "Golden Fried Plantain",
+      "alt": "Golden fried plantains prepared by Maggie's Kitchen"
+    },
+    {
+      "src": "assets/images/grilled-fish-fried-plantain-catering-tray.jpeg",
+      "caption": "Fish & Plantain Tray",
+      "alt": "Catering tray with grilled fish and fried plantains"
+    },
+    {
+      "src": "assets/images/whole-grilled-fish-rice-salad-platter.jpeg",
+      "caption": "Celebration Platter",
+      "alt": "Whole grilled fish platter with rice, salad and plantains"
+    },
+    {
+      "src": "assets/images/chicken-wings-loaded-fries-tray.jpeg",
+      "caption": "Wings & Loaded Fries",
+      "alt": "Chicken wings and loaded fries catering tray"
+    },
+    {
+      "src": "assets/images/bottled-homemade-juice.jpeg",
+      "caption": "Homemade Refreshments",
+      "alt": "Bottles of homemade juice from Maggie's Kitchen"
+    }
   ],
   "contact": {
-    "address": "123 Flavor Street, Your City",
-    "phone": "(555) 010-0100",
+    "address": "San Antonio, Texas",
+    "phone": "(726) 248-7621",
     "hours": "Mon-Sun, 11:00 AM - 10:00 PM",
     "email": "hello@maggieskitchen.com"
   },
-  "social": {"facebook":"","instagram":"","youtube":""}
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "youtube": ""
+  }
 }
