@@ -314,12 +314,14 @@
       <div class="mt-6 flex flex-wrap justify-center gap-4 text-xs text-white/80">
         <a href="about.html" class="hover:text-white underline">About</a>
         <a href="menu.html" class="hover:text-white underline">Menu</a>
-        <a href="catering.html" class="hover:text-white underline">Catering</a>
         <a href="gallery.html" class="hover:text-white underline">Gallery</a>
-        <a href="contact.html" class="hover:text-white underline">Contact &amp; Policy</a>
+        <a href="catering.html" class="hover:text-white underline">Catering</a>
+        <a href="contact.html#payment-cancellation-policy" class="hover:text-white underline">Contact &amp; Policy</a>
       </div>
+      <p class="mt-8 text-xs text-white/70">&copy; <span id="year">2026</span> Maggie's Kitchen. All rights reserved.</p>
     </div>
   </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
   <!-- BOOKING / ORDER INQUIRY MODAL -->
   <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
