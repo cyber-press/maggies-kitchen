@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --green-dark: #0f2e21;
@@ -31,8 +31,10 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
+      line-height: 1.65;
     }
-    h1, h2, .font-serif-display { font-family: 'Playfair Display', Georgia, serif; }
+    h1, h2, h3 { font-family: 'Manrope', sans-serif; font-weight: 700; letter-spacing: -0.025em; }
+    .font-serif-display, .luxury-accent { font-family: 'Playfair Display', Georgia, serif; }
     .hero-section { background-color: var(--green-dark); position: relative; overflow: hidden; }
     .hero-overlay {
       background: linear-gradient(90deg, rgba(15,46,33,0.14) 0%, rgba(15,46,33,0.58) 42%, var(--green-dark) 68%, var(--green-dark) 100%);
