@@ -284,6 +284,31 @@
   </section>
 
   <!-- SECTION 6: NEWSLETTER / FOOTER BANNER -->
+  <!-- GUEST REVIEWS -->
+  <section class="py-16 sm:py-20" style="background-color: var(--cream);">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center" style="color: var(--green-dark);">What Our Guests Say</h2>
+      <p class="mt-3 text-sm text-center max-w-xl mx-auto" style="color: var(--text-light);">Fresh, flavorful, and made with love. That is the word from our tables and catering clients.</p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <figure class="bg-white rounded-2xl p-6" style="border: 1px solid var(--cream-alt); box-shadow: 0 10px 30px rgba(15,46,33,.08);">
+          <div class="text-base tracking-widest" style="color: var(--gold);">★★★★★</div>
+          <blockquote class="mt-3 text-sm leading-relaxed" style="color: var(--text);">I was blown away by the flavors and the friendly service! Highly recommend Maggie's Kitchen for any occasion.</blockquote>
+          <figcaption class="mt-4 text-xs font-bold uppercase tracking-wider" style="color: var(--orange);">Jordan Smith</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-6" style="border: 1px solid var(--cream-alt); box-shadow: 0 10px 30px rgba(15,46,33,.08);">
+          <div class="text-base tracking-widest" style="color: var(--gold);">★★★★★</div>
+          <blockquote class="mt-3 text-sm leading-relaxed" style="color: var(--text);">Maggie's Kitchen never disappoints! The food is always fresh, flavorful, and made with love. A true gem.</blockquote>
+          <figcaption class="mt-4 text-xs font-bold uppercase tracking-wider" style="color: var(--orange);">Taylor Johnson</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-6" style="border: 1px solid var(--cream-alt); box-shadow: 0 10px 30px rgba(15,46,33,.08);">
+          <div class="text-base tracking-widest" style="color: var(--gold);">★★★★★</div>
+          <blockquote class="mt-3 text-sm leading-relaxed" style="color: var(--text);">Exceptional quality and ambiance! Each visit feels special, and their catering services are top-notch.</blockquote>
+          <figcaption class="mt-4 text-xs font-bold uppercase tracking-wider" style="color: var(--orange);">Casey Williams</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <footer id="newsletter" class="bg-[#c1560c] py-16 md:py-20">
     <div class="max-w-lg mx-auto px-6 text-center">
       <h2 class="text-2xl sm:text-3xl font-bold text-white">Join us daily for a taste of West Africa!</h2>
@@ -381,10 +406,20 @@
       document.getElementById('inquiry-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const name = document.getElementById('inq-name').value.trim();
+        const phone = document.getElementById('inq-phone').value.trim();
         const service = inqService.value;
+        const guests = document.getElementById('inq-guests').value;
+        const notes = document.getElementById('inq-notes').value.trim();
+        const dish = (modalDishLabel.textContent || '').replace('Selected: ', '').trim();
+        const lines = ["Hello Maggie's Kitchen! I would like to place a request.", `Name: ${name}`, `Request: ${service}`];
+        if (dish) lines.push(`Item: ${dish}`);
+        if (guests) lines.push(`Guests / quantity: ${guests}`);
+        if (phone) lines.push(`My phone: ${phone}`);
+        if (notes) lines.push(`Details: ${notes}`);
+        window.open('https://wa.me/14843528208?text=' + encodeURIComponent(lines.join('\n')), '_blank');
         bookingModal.classList.add('hidden');
         bookingModal.classList.remove('flex');
-        showToast(`Thanks ${name}! Your ${service.toLowerCase()} request is ready—send $20 deposit to $magbee08 to lock it in.`);
+        showToast(`Thanks ${name}! Opening WhatsApp to send your ${service.toLowerCase()} request. Send the $20 deposit to $magbee08 to lock it in.`);
         e.target.reset();
       });
 
