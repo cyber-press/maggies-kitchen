@@ -1,11 +1,399 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Maggie's Kitchen | West African Cuisine &amp; Lounge</title><meta name="description" content="Maggie's Kitchen serves bold West African dishes, catering and braiding services."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/styles.css"></head><body>
-<header class="site-header" id="site-header"><div class="container header-inner"><a href="index.html" class="logo"><span class="logo-badge">MK</span><span class="logo-text">Maggie's<small>KITCHEN</small></span></a><nav class="main-nav" id="main-nav"><a href="index.html">Home</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="catering.html">Catering &amp; Braiding</a><a href="#contact">Contact</a></nav><div class="header-actions"><a href="#contact" class="btn btn-primary btn-sm">Book Now</a><button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></div></header>
-<main><section class="hero"><div class="container hero-content"><p class="eyebrow reveal">Taste the Bold Flavors</p><h1 class="reveal">Experience Vibrant West African Cuisine and Atmosphere</h1><p class="hero-sub reveal">Join us for a unique dining experience that celebrates flavor and community.</p><div class="hero-actions reveal"><a href="#menu" class="btn btn-primary">Explore Menu</a><a href="#contact" class="btn btn-outline-light">Book Now</a></div></div></section>
-<section class="section about" id="about"><div class="container about-grid"><div class="reveal"><p class="eyebrow">Join Us Today</p><h2>Experience Flavor and Connection</h2></div><div class="about-copy reveal"><p>Maggie's Kitchen is a culinary haven that celebrates West African culture through exquisite food and ambiance.</p><p>At Maggie's Kitchen, we invite you to savor the rich traditions of West African cuisine while enjoying a contemporary lounge experience.</p></div></div></section>
-<section class="section menu-highlights" id="menu"><div class="container"><div class="section-head reveal"><h2>Exquisite West African Cuisine</h2><p>Savor our signature dishes, carefully crafted to elevate your dining experience.</p></div><div class="feature-grid"><div class="feature-card reveal"><span class="check">&#10003;</span><h3>Flavorful Highlights</h3><p>Indulge in iconic dishes such as smoky jollof, grilled fish and golden plantain.</p></div><div class="feature-card reveal"><span class="check">&#10003;</span><h3>Catering Services</h3><p>Celebrate with generous catering options for every occasion.</p></div><div class="feature-card reveal"><span class="check">&#10003;</span><h3>Braiding Expertise</h3><p>Experience personalized protective styles crafted with care.</p></div><div class="feature-card reveal"><span class="check">&#10003;</span><h3>Inviting Atmosphere</h3><p>Relax and connect in our welcoming lounge.</p></div></div></div></section>
-<section class="section testimonials" id="testimonials"><div class="container"><div class="section-head light reveal"><p class="eyebrow">Testimonials</p><h2>What Our Customers Say</h2></div><div class="testimonial-grid"><div class="testimonial-card reveal"><div class="stars">★★★★★</div><p>"I was blown away by the flavors and the friendly service!"</p><span class="testimonial-name">Jordan Smith</span></div><div class="testimonial-card reveal"><div class="stars">★★★★★</div><p>"The food is always fresh, flavorful, and made with love."</p><span class="testimonial-name">Taylor Johnson</span></div><div class="testimonial-card reveal"><div class="stars">★★★★★</div><p>"Exceptional quality and ambiance!"</p><span class="testimonial-name">Casey Williams</span></div></div></div></section>
-<section class="section gallery" id="gallery"><div class="container"><div class="section-head reveal"><p class="eyebrow">Made With Care</p><h2>Visual Feast</h2><p>Explore a selection of Maggie's Kitchen favorites.</p></div><div class="gallery-grid food-gallery"><figure class="gallery-item large reveal"><img src="assets/images/jollof-rice-catering-tray.jpeg" alt="Jollof rice"><figcaption>Signature Jollof Rice</figcaption></figure></div></div></section>
-<section class="section cta-band"><div class="container cta-band-inner reveal"><p class="eyebrow">Experience Vibrant Flavors</p><h2>Join us daily for a taste of West Africa!</h2><div class="hero-actions"><a href="#contact" class="btn btn-primary">Book Now</a><a href="#contact" class="btn btn-outline">Order Today</a></div></div></section>
-<section class="section contact" id="contact"><div class="container contact-grid"><div class="reveal"><p class="eyebrow">Join Us Today</p><h2>Reserve Your Table or Ask a Question</h2><ul class="contact-details"><li><strong>Location:</strong> San Antonio, Texas</li><li><strong>Phone:</strong> (555) 010-0100</li><li><strong>Hours:</strong> Mon-Sun, 11:00 AM - 10:00 PM</li><li><strong>Email:</strong> hello@maggieskitchen.com</li></ul><a href="contact.html#payment-cancellation-policy" class="link-arrow">Payment &amp; Cancellation Policy</a></div><form class="reserve-form reveal" id="reserve-form"><input type="text" placeholder="Full Name"><input type="email" placeholder="Email Address"><textarea rows="4" placeholder="Tell us about your occasion"></textarea><button class="btn btn-primary">Send Inquiry</button><p class="form-note" id="form-note"></p></form></div></section></main>
-<footer class="site-footer"><div class="container footer-bottom"><p>&copy; <span id="year"></span> Maggie's Kitchen. All rights reserved.</p></div></footer><button id="back-to-top">&uarr;</button><script src="assets/js/content-loader.js"></script><script src="assets/js/main.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maggie's Kitchen | West African Cuisine &amp; Lounge</title>
+  <meta name="description" content="Maggie's Kitchen serves bold West African dishes, catering, and braiding services in San Antonio, Texas." />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-dark: #0f2e21;
+      --green: #1b4332;
+      --green-soft: #e7efe9;
+      --orange: #c1560c;
+      --orange-dark: #a3480a;
+      --gold: #c9a227;
+      --cream: #fbf7ef;
+      --cream-alt: #f3ead9;
+      --text: #1f2420;
+      --text-light: #5b665f;
+      --white: #ffffff;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background-color: var(--white);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    h1, h2, .font-serif-display { font-family: 'Playfair Display', Georgia, serif; }
+    .hero-section { background-color: var(--green-dark); position: relative; overflow: hidden; }
+    .hero-overlay {
+      background: linear-gradient(90deg, rgba(15,46,33,0.14) 0%, rgba(15,46,33,0.58) 42%, var(--green-dark) 68%, var(--green-dark) 100%);
+    }
+    @media (max-width: 768px) {
+      .hero-overlay {
+        background: linear-gradient(180deg, rgba(15,46,33,0.45) 0%, rgba(15,46,33,0.90) 46%, var(--green-dark) 100%);
+      }
+    }
+    .accent-orange { color: var(--orange); }
+    .accent-gold { color: var(--gold); }
+    .blob-bg { background-color: var(--green-soft); }
+    .btn-primary-dark {
+      background-color: var(--green-dark);
+      color: var(--white);
+      transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-primary-dark:hover {
+      background-color: var(--green);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(15,46,33,0.22);
+    }
+    .btn-hero-cta {
+      background-color: var(--white);
+      color: var(--orange);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-hero-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.28);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-amber-200 selection:text-slate-900">
+
+  <!-- SECTION 1: HERO BANNER -->
+  <section id="hero" class="hero-section min-h-[560px] md:min-h-[620px] flex items-center">
+    <img src="assets/images/jollof-rice-catering-tray.jpeg" alt="Signature Jollof Rice" class="absolute inset-0 w-full h-full object-cover object-left" />
+    <div class="hero-overlay absolute inset-0 pointer-events-none"></div>
+
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-6 sm:px-10 py-14 md:py-20">
+      <div class="flex justify-end">
+        <div class="w-full md:w-[50%] lg:w-[46%] text-right flex flex-col items-end">
+          <div class="mb-9 flex flex-col items-end">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-[#c1560c] flex items-center justify-center text-white font-bold text-sm tracking-tight shadow-md">MK</div>
+              <span class="text-2xl tracking-tight leading-none font-serif-display">
+                <span class="font-bold text-white">Maggie's</span>
+                <span class="font-normal text-white/80">Kitchen</span>
+              </span>
+            </div>
+            <span class="text-[11px] tracking-widest uppercase text-[#c9a227] mt-1.5 font-semibold">
+              West African Cuisine &amp; Lounge · San Antonio, TX
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white leading-tight">
+            Experience Vibrant West African Cuisine
+          </h1>
+          <p class="mt-3 text-base sm:text-lg font-medium text-white/90">
+            Taste the Bold Flavors &amp; Atmosphere
+          </p>
+          <p class="mt-3 text-xs sm:text-sm text-white/75 leading-relaxed max-w-md">
+            Join us for a unique dining experience celebrating smoky jollof, grilled fish, catering trays, and personalized braiding services.
+          </p>
+
+          <div class="mt-7 flex flex-col items-end">
+            <span class="text-sm font-semibold text-white">Signature Jollof &amp; Catering Trays</span>
+            <div class="mt-1 flex items-baseline gap-2.5">
+              <span class="text-xs text-white/70">Booking deposit</span>
+              <span class="text-2xl font-bold accent-gold">$20.00</span>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-wrap justify-end gap-3">
+            <a href="menu.html" class="px-7 py-3 rounded-full text-sm font-semibold border border-white/30 text-white hover:bg-white/10 transition">
+              Explore Menu
+            </a>
+            <button type="button" data-open-booking="Food order" data-dish-name="Signature Jollof &amp; Catering" class="btn-hero-cta px-8 py-3 rounded-full text-sm font-bold shadow-md cursor-pointer">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ABOUT SECTION -->
+  <section id="about" class="py-16 md:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+        <div class="overflow-hidden shadow-sm bg-[#fbf7ef] aspect-[4/3]">
+          <img src="assets/images/grilled-fish-salad-beans-platter.jpeg" alt="Grilled Fish Platter" class="w-full h-full object-cover" />
+        </div>
+        <div class="overflow-hidden shadow-sm bg-[#0f2e21] aspect-[4/3]">
+          <img src="assets/images/whole-grilled-fish-rice-salad-platter.jpeg" alt="Celebration Platter" class="w-full h-full object-cover" />
+        </div>
+        <div class="md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-full md:w-[390px] lg:w-[420px] bg-white p-8 sm:p-10 shadow-[0_20px_45px_rgba(15,46,33,0.14)] z-10 text-left">
+          <h2 class="text-2xl sm:text-[26px] font-bold text-[#0f2e21] leading-snug">
+            <span class="block">Experience Flavor</span>
+            <span class="block">and Connection</span>
+          </h2>
+          <div class="mt-4 space-y-3 text-xs sm:text-[13px] text-[#5b665f] leading-relaxed">
+            <p class="font-medium text-[#1f2420]">
+              Maggie's Kitchen is a culinary haven that celebrates West African culture through exquisite food and ambiance.
+            </p>
+            <p>
+              Our menu features beloved dishes like smoky jollof, whole grilled fish, and sweet golden plantain, made for sharing with loved ones.
+            </p>
+            <p>
+              Our vibrant lounge and personalized braiding services are designed to foster connection and celebrate your style.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: 3-COLUMN CORE VALUES -->
+  <section id="values" class="py-12 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#0f2e21]">Authenticity, Generosity &amp; Community</h2>
+        <p class="mt-2.5 text-sm text-[#5b665f]">Every dish, catering tray, and appointment is crafted to bring people together</p>
+      </div>
+      <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+        <div class="flex flex-col items-center">
+          <div class="relative w-24 h-24 flex items-center justify-center mb-5">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" fill="none"><path d="M53 8C77 9 92 27 90 52C88 76 68 92 44 90C20 88 7 69 10 44C13 20 31 7 53 8Z" fill="var(--green-soft)" /></svg>
+            <svg class="relative z-10 w-11 h-11" viewBox="0 0 48 48" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h28c0 9-6.3 15-14 15s-14-6-14-15z" /><path d="M15 24c0-5 4-9 9-9s9 4 9 9" /><path d="M24 19.5c-1.5-1.8-4.5-1.2-4.5 1.1 0 2 4.5 4.4 4.5 4.4s4.5-2.4 4.5-4.4c0-2.3-3-2.9-4.5-1.1z" /></svg>
+          </div>
+          <h3 class="text-base font-semibold text-[#0f2e21]">01 · Authenticity</h3>
+          <p class="mt-2.5 text-xs sm:text-[13px] text-[#5b665f] leading-relaxed max-w-[260px]">West African favorites made with familiar ingredients, distinctive seasoning, and respect for tradition.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="relative w-24 h-24 flex items-center justify-center mb-5">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" fill="none"><path d="M47 9C71 6 91 25 91 50C91 75 72 91 48 91C24 91 9 73 9 49C9 25 24 12 47 9Z" fill="var(--green-soft)" /></svg>
+            <svg class="relative z-10 w-11 h-11" viewBox="0 0 48 48" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="13" /><path d="M18 24h12M24 18v12" /></svg>
+          </div>
+          <h3 class="text-base font-semibold text-[#0f2e21]">02 · Generosity</h3>
+          <p class="mt-2.5 text-xs sm:text-[13px] text-[#5b665f] leading-relaxed max-w-[260px]">Satisfying portions and flexible catering designed to bring people together around the table.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="relative w-24 h-24 flex items-center justify-center mb-5">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" fill="none"><path d="M52 8C75 11 92 31 89 55C86 78 65 92 42 89C19 86 7 66 10 42C13 18 30 6 52 8Z" fill="var(--green-soft)" /></svg>
+            <svg class="relative z-10 w-11 h-11" viewBox="0 0 48 48" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 32c0-4.4 3.6-8 8-8s8 3.6 8 8" /><circle cx="24" cy="18" r="5" /></svg>
+          </div>
+          <h3 class="text-base font-semibold text-[#0f2e21]">03 · Community</h3>
+          <p class="mt-2.5 text-xs sm:text-[13px] text-[#5b665f] leading-relaxed max-w-[260px]">A welcoming experience where food, conversation, celebrations, and personal style can connect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: SERVICES SPLIT SECTION -->
+  <section id="services" class="py-14 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#0f2e21]">Food, Catering &amp; Braiding</h2>
+          <p class="mt-4 text-xs sm:text-sm text-[#5b665f] leading-relaxed max-w-md">
+            Celebrate with generous catering options for 1 to 500 guests, relax in our San Antonio lounge, or book personalized protective braiding styles.
+          </p>
+          <div class="mt-7 grid grid-cols-2 gap-x-6 gap-y-3.5 max-w-sm">
+            <div class="flex items-center gap-2.5"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 10.5l4 4 8-8"/></svg><span class="text-xs sm:text-sm text-[#1f2420]">Smoky Jollof Rice</span></div>
+            <div class="flex items-center gap-2.5"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 10.5l4 4 8-8"/></svg><span class="text-xs sm:text-sm text-[#1f2420]">Catering (1–500)</span></div>
+            <div class="flex items-center gap-2.5"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 10.5l4 4 8-8"/></svg><span class="text-xs sm:text-sm text-[#1f2420]">Whole Grilled Fish</span></div>
+            <div class="flex items-center gap-2.5"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 10.5l4 4 8-8"/></svg><span class="text-xs sm:text-sm text-[#1f2420]">Braiding Expertise</span></div>
+            <div class="flex items-center gap-2.5"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 10.5l4 4 8-8"/></svg><span class="text-xs sm:text-sm text-[#1f2420]">Golden Plantains</span></div>
+            <div class="flex items-center gap-2.5"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 10.5l4 4 8-8"/></svg><span class="text-xs sm:text-sm text-[#1f2420]">Inviting Lounge</span></div>
+          </div>
+          <div class="mt-9 flex flex-wrap items-center gap-6">
+            <button type="button" data-open-booking="Catering quote" data-dish-name="Catering or Braiding Inquiry" class="btn-primary-dark px-8 py-3 rounded-full text-sm font-semibold cursor-pointer">
+              Order Today
+            </button>
+            <a href="catering.html" class="text-xs font-semibold accent-orange hover:underline">Catering &amp; Braiding Details →</a>
+          </div>
+        </div>
+        <div class="aspect-square overflow-hidden bg-[#0f2e21] shadow-sm">
+          <img src="assets/images/jollof-rice-catering-tray.jpeg" alt="Maggie's Kitchen Jollof Rice" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: SIGNATURE DISHES SHOWCASE -->
+  <section id="menu" class="py-14 md:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div class="max-w-md">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#0f2e21]">Signature dishes</h2>
+          <p class="mt-3 text-xs sm:text-sm text-[#5b665f] leading-relaxed">Prepared fresh for individual plates or generous catering trays. Click any dish to request availability and pricing.</p>
+        </div>
+        <a href="contact.html#payment-cancellation-policy" class="text-xs font-semibold accent-orange hover:underline self-start sm:self-end">View Deposit &amp; Pickup Policy →</a>
+      </div>
+
+      <div class="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-12 text-center">
+        <div class="group flex flex-col items-center cursor-pointer" data-open-booking="Food order" data-dish-name="Signature Jollof Rice">
+          <div class="relative w-48 h-48 flex items-center justify-center mb-5">
+            <div class="blob-bg absolute w-36 h-36 rounded-full -top-1 left-2 transition-transform duration-300 group-hover:scale-105"></div>
+            <div class="blob-bg absolute w-24 h-24 rounded-full bottom-2 right-2 opacity-80 transition-transform duration-300 group-hover:scale-110"></div>
+            <img src="assets/images/jollof-rice-catering-tray.jpeg" alt="Signature Jollof Rice" class="relative z-10 w-36 h-36 rounded-full object-cover shadow-md transition-transform duration-300 group-hover:-translate-y-1" />
+          </div>
+          <h3 class="text-sm font-semibold text-[#0f2e21]">Signature Jollof Rice</h3>
+          <span class="mt-1.5 text-sm font-bold accent-orange">Customer favorite</span>
+        </div>
+
+        <div class="group flex flex-col items-center cursor-pointer" data-open-booking="Food order" data-dish-name="Fish &amp; Plantain Tray">
+          <div class="relative w-48 h-48 flex items-center justify-center mb-5">
+            <div class="blob-bg absolute w-36 h-36 rounded-full top-1 right-2 transition-transform duration-300 group-hover:scale-105"></div>
+            <div class="blob-bg absolute w-24 h-24 rounded-full bottom-1 left-3 opacity-80 transition-transform duration-300 group-hover:scale-110"></div>
+            <img src="assets/images/grilled-fish-fried-plantain-catering-tray.jpeg" alt="Fish and Plantain Tray" class="relative z-10 w-36 h-36 rounded-full object-cover shadow-md transition-transform duration-300 group-hover:-translate-y-1" />
+          </div>
+          <h3 class="text-sm font-semibold text-[#0f2e21]">Fish &amp; Plantain Tray</h3>
+          <span class="mt-1.5 text-sm font-bold accent-orange">Great for groups</span>
+        </div>
+
+        <div class="group flex flex-col items-center cursor-pointer" data-open-booking="Food order" data-dish-name="Golden Fried Plantain">
+          <div class="relative w-48 h-48 flex items-center justify-center mb-5">
+            <div class="blob-bg absolute w-36 h-36 rounded-full -top-1 left-3 transition-transform duration-300 group-hover:scale-105"></div>
+            <div class="blob-bg absolute w-24 h-24 rounded-full bottom-2 right-1 opacity-80 transition-transform duration-300 group-hover:scale-110"></div>
+            <img src="assets/images/fried-plantain-close-up.jpeg" alt="Golden Fried Plantain" class="relative z-10 w-36 h-36 rounded-full object-cover shadow-md transition-transform duration-300 group-hover:-translate-y-1" />
+          </div>
+          <h3 class="text-sm font-semibold text-[#0f2e21]">Golden Fried Plantain</h3>
+          <span class="mt-1.5 text-sm font-bold accent-orange">Classic side</span>
+        </div>
+      </div>
+
+      <div class="mt-14 pt-8 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
+        <button type="button" data-open-booking="Food order" data-dish-name="Grilled Fish Platter" class="p-4 rounded-xl bg-[#fbf7ef] hover:bg-[#f3ead9] transition text-left cursor-pointer">
+          <div class="text-xs font-bold accent-orange uppercase tracking-wider">Made to order</div>
+          <div class="text-sm font-semibold text-[#0f2e21] mt-1">Grilled Fish Platter</div>
+          <p class="text-xs text-[#5b665f] mt-1">Whole seasoned fish served with colorful salad, eggs, beans, and house sauces.</p>
+        </button>
+        <button type="button" data-open-booking="Food order" data-dish-name="Wings &amp; Loaded Fries" class="p-4 rounded-xl bg-[#fbf7ef] hover:bg-[#f3ead9] transition text-left cursor-pointer">
+          <div class="text-xs font-bold accent-orange uppercase tracking-wider">Casual favorite</div>
+          <div class="text-sm font-semibold text-[#0f2e21] mt-1">Wings &amp; Loaded Fries</div>
+          <p class="text-xs text-[#5b665f] mt-1">Hearty tray of seasoned chicken with fries, toppings, and flavorful sauces.</p>
+        </button>
+        <button type="button" data-open-booking="Food order" data-dish-name="Homemade Refreshments" class="p-4 rounded-xl bg-[#fbf7ef] hover:bg-[#f3ead9] transition text-left cursor-pointer">
+          <div class="text-xs font-bold accent-orange uppercase tracking-wider">Ask about flavors</div>
+          <div class="text-sm font-semibold text-[#0f2e21] mt-1">Homemade Refreshments</div>
+          <p class="text-xs text-[#5b665f] mt-1">Chilled house-made drinks available by the bottle for meals and catered occasions.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: NEWSLETTER / FOOTER BANNER -->
+  <footer id="newsletter" class="bg-[#c1560c] py-16 md:py-20">
+    <div class="max-w-lg mx-auto px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white">Join us daily for a taste of West Africa!</h2>
+      <p class="mt-2 text-xs sm:text-sm text-white/85">San Antonio, TX · Mon–Sun, 11:00 AM – 10:00 PM · hello@maggieskitchen.com</p>
+      <form id="newsletter-form" class="mt-7 flex flex-col items-center gap-4 max-w-md mx-auto">
+        <input id="newsletter-email" type="email" required placeholder="Your e-mail" class="w-full bg-white text-[#1f2420] placeholder-[#5b665f] text-center text-sm px-5 py-3.5 rounded-sm focus:outline-none focus:ring-2 focus:ring-black/20" />
+        <button type="submit" class="btn-primary-dark px-10 py-3 rounded-full text-sm font-semibold cursor-pointer">Stay Updated</button>
+      </form>
+      <div class="mt-6 flex flex-wrap justify-center gap-4 text-xs text-white/80">
+        <a href="about.html" class="hover:text-white underline">About</a>
+        <a href="menu.html" class="hover:text-white underline">Menu</a>
+        <a href="catering.html" class="hover:text-white underline">Catering</a>
+        <a href="gallery.html" class="hover:text-white underline">Gallery</a>
+        <a href="contact.html" class="hover:text-white underline">Contact &amp; Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING / ORDER INQUIRY MODAL -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-7 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button id="close-booking-modal" type="button" aria-label="Close modal" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600 cursor-pointer">✕</button>
+      <span class="text-[11px] font-bold uppercase tracking-wider accent-orange">Maggie's Kitchen · San Antonio, TX</span>
+      <h3 class="text-xl font-bold text-[#0f2e21] mt-1 font-serif-display">Request Order or Booking</h3>
+      <p id="modal-dish-label" class="text-xs text-[#5b665f] mt-1">Selected: Signature Jollof Rice</p>
+      <form id="inquiry-form" class="mt-5 space-y-3.5 text-xs sm:text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">Full Name</label>
+            <input id="inq-name" type="text" required placeholder="Jordan Smith" class="w-full border border-slate-200 rounded-lg px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">Phone Number</label>
+            <input id="inq-phone" type="tel" required placeholder="(210) 555-0199" class="w-full border border-slate-200 rounded-lg px-3 py-2" />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">Service</label>
+            <select id="inq-service" class="w-full border border-slate-200 rounded-lg px-3 py-2 bg-white">
+              <option value="Food order">Food order</option>
+              <option value="Catering quote">Catering quote</option>
+              <option value="Table reservation">Table reservation</option>
+              <option value="Braiding appointment">Braiding appointment</option>
+              <option value="General question">General question</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-600 mb-1">Guest Count (1–500)</label>
+            <input id="inq-guests" type="number" min="1" max="500" value="4" class="w-full border border-slate-200 rounded-lg px-3 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-medium text-slate-600 mb-1">Preferred Date &amp; Notes</label>
+          <textarea id="inq-notes" rows="2" placeholder="Date/time, tray preferences, or braiding style..." class="w-full border border-slate-200 rounded-lg px-3 py-2"></textarea>
+        </div>
+        <div class="p-3 rounded-lg bg-[#fbf7ef] border border-[#f3ead9] text-[11px] text-[#5b665f] leading-relaxed">
+          <strong class="text-[#0f2e21]">Deposit &amp; Pickup Policy:</strong> A <strong>$20 deposit</strong> via Cash App (<strong>$magbee08</strong>) secures your booking, with the remaining balance paid in cash at pickup in San Antonio. Delivery outside 10 miles has an additional fee.
+        </div>
+        <button type="submit" class="w-full btn-primary-dark py-3 rounded-full text-sm font-semibold cursor-pointer">Send Request</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-banner" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[70] hidden bg-[#0f2e21] text-white text-xs sm:text-sm font-medium px-5 py-3 rounded-full shadow-xl"></div>
+
+  <script>
+    (function () {
+      const bookingModal = document.getElementById('booking-modal');
+      const modalDishLabel = document.getElementById('modal-dish-label');
+      const inqService = document.getElementById('inq-service');
+      const toast = document.getElementById('toast-banner');
+
+      function showToast(msg) {
+        toast.textContent = msg;
+        toast.classList.remove('hidden');
+        clearTimeout(window.__toastTimer);
+        window.__toastTimer = setTimeout(() => toast.classList.add('hidden'), 3500);
+      }
+
+      document.querySelectorAll('[data-open-booking]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          inqService.value = btn.dataset.openBooking || 'Food order';
+          modalDishLabel.textContent = `Selected: ${btn.dataset.dishName || 'Signature Jollof Rice'}`;
+          bookingModal.classList.remove('hidden');
+          bookingModal.classList.add('flex');
+        });
+      });
+
+      document.getElementById('close-booking-modal').addEventListener('click', () => {
+        bookingModal.classList.add('hidden');
+        bookingModal.classList.remove('flex');
+      });
+
+      document.getElementById('inquiry-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('inq-name').value.trim();
+        const service = inqService.value;
+        bookingModal.classList.add('hidden');
+        bookingModal.classList.remove('flex');
+        showToast(`Thanks ${name}! Your ${service.toLowerCase()} request is ready—send $20 deposit to $magbee08 to lock it in.`);
+        e.target.reset();
+      });
+
+      document.getElementById('newsletter-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('newsletter-email').value.trim();
+        if (!email) return;
+        showToast(`Subscribed ${email} to Maggie's Kitchen updates!`);
+        e.target.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
