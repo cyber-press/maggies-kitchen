@@ -3,3 +3,7 @@
 
 #payment-cancellation-policy{scroll-margin-top:88px}
 .policy-link{justify-self:start;color:var(--green-dark);font-size:.9rem;text-decoration:underline;text-underline-offset:.2em}
+@media(max-width:400px){
+  body.inner .header-inner,body.inner .header-actions{gap:8px}
+  body.inner .header-actions .btn-sm{padding-inline:14px}
+}
